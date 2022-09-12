@@ -110,13 +110,14 @@ const genTests = tests => {
 const generateMarkdown = (data) => {
   return `
   # ${data.title}
+  ## License
+  ### ${data.license}
   ## Description
   ${data.description}
   By: [${data.name}](https://github.com/${data.github})
   ## Table of Contents
   ${installCheck(data.installation)}
-  * [Usage](#usage)
-  * [License](#license)  
+  * [Usage](#usage)  
   ${contribCheck(data.contributors)}
   ${testCheck(data.tests)}
   * [Questions?](#questions)<br>
@@ -124,8 +125,7 @@ const generateMarkdown = (data) => {
   ${genInstall(data.installation)}  
   ## Usage
   ${data.usage}
-  ## License
-  ### ${data.license}<br>
+  <br>
   ${genContrib(data.credits)}
   [${data.credits}](${data.creditsLink})<br>
   ${genTests(data.tests)}

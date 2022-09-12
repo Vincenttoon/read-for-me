@@ -1,12 +1,13 @@
 
-  # name
+  # readme generator
+  ## License
+  ### MIT
   ## Description
-  des
-  By: [vince](https://github.com/user)
+  descript
+  By: [Vincent](https://github.com/vincenttoon)
   ## Table of Contents
   * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)  
+  * [Usage](#usage)  
   * [Contributors](#contributors)
   * [Tests](#tests)
   * [Questions?](#questions)<br>
@@ -15,15 +16,15 @@
     ## Installation
     install  
   ## Usage
-  step
-  ## License
-  MIT<br>
-  [
+  steps
+  <br>
+  
     ## Contributors
-    steve](link 2)
+    stephen
+  [stephen](https://github.com/stephen-kern)<br>
   
     ## Tests
-    test
+    instruc
   ## Questions?
   Questions, comments, or concerns? Please Email me at:
-  * email
+  * vincenttoon22@gmail.com
