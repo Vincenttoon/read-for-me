@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
-const {writeFile} = require('./develop/utils/writePage.js');
+// Variables needed to run application
+const {writeFile} = require('./utils/writePage.js');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./develop/utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// TODO: Create an array of questions for user input
+// Question array for user input ReadMe
 const reqQuestions = (promptResponse) => {
     return inquirer.prompt([
         {
@@ -172,18 +172,20 @@ const reqQuestions = (promptResponse) => {
             },
         }
     ])
+    // Takes data and sends it to generateMarkdown
     .then (data => {
         return generateMarkdown(data);
     })
+    // Takes data from Markdown page and writes it to a Markdown file
     .then(Markdown => {
         return writeFile(Markdown);
     })
 };
 
-// TODO: Create a function to initialize app
+// Arrow function to start application
 const init = (data) => {
     reqQuestions()
 }
 
-// Function call to initialize app
+// Start application
 init();

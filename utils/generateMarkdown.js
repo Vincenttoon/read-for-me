@@ -11,13 +11,14 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // Create checks for non required answers
+// Check and Generate for Installation Prompt
 const installCheck = check => {
   if (!check) {
     return ''
   } else {
     return `* [Installation](#installation)`
   }
-} 
+};
 const genInstall = installation => {
   if (!installation) {
     return ''
@@ -26,15 +27,16 @@ const genInstall = installation => {
     ## Installation
     ${installation}`
   }
-}
+};
 
+// Check and Generate for Contributor Prompt
 const contribCheck = check => {
   if (!check) {
     return ''
   } else {
     return `* [Contributors](#contributors)`
   }
-}  
+}; 
 const genContrib = contributors => {
   if (!contributors) {
     return ''
@@ -43,9 +45,9 @@ const genContrib = contributors => {
     ## Contributors
     ${contributors}`
   }
-}
+};
 
-// TODO: Create a function to generate markdown for README
+// Arrow function to create ReadMe
 const generateMarkdown = (data) => {
   return `
   # ${data.title}
@@ -62,7 +64,7 @@ const generateMarkdown = (data) => {
   ${data.usage}
   ## License
   ${data.license}
-  ${genContrib(data.credits)}
+  [${genContrib(data.credits)}](${data.creditsLink})
 
   ### Created by:
   * [${data.name}](https://github.com/${data.github})
@@ -71,4 +73,5 @@ const generateMarkdown = (data) => {
 `;
 }
 
+// Export ReadMe to index.js
 module.exports = generateMarkdown;
