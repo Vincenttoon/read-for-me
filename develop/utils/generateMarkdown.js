@@ -10,6 +10,24 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
+// Create checks for non required answers
+const genInstall = installation => {
+  if (!installation) {
+    return ''
+  } else {
+    return `## Installation
+    ${installation}`
+  }
+}
+
+const installCheck = check => {
+  if (!check) {
+    return ''
+  } else {
+    return `* [Installation](#installation)`
+  }
+} 
+
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) => {
   return `
@@ -17,10 +35,12 @@ const generateMarkdown = (data) => {
   ## Description
   ${data.description}
   ## Table of Contents
+  ${installCheck(data.installation)}
   * [Usage](#usage)
   * [License](#license)
   * [Contributors](#contributors)
 
+  ${genInstall(data.installation)}
   ## Usage
   ${data.usage}
   ## License
