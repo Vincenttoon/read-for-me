@@ -17,6 +17,19 @@ const generateMarkdown = (data) => {
   ## Description
   ${data.description}
   ## Table of Contents
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributors](#contributors)
+
+  ## Usage
+  ${data.usage}
+  ## License
+  ${data.license}
+  ## Contributors
+  ${data.credits}
+
+  ### Created by:
+  * [${data.name}](https://github.com/${data.github})
 `;
 }
 
