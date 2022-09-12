@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
-const {writeFile} = require('./utils/writePage.js');
+const {writeFile} = require('./develop/utils/writePage.js');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./develop/utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const reqQuestions = (promptResponse) => {

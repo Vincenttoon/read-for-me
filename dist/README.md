@@ -6,15 +6,14 @@
   
   * [Usage](#usage)
   * [License](#license)
-  * [Contributors](#contributors)
+  
 
   
   ## Usage
   v
   ## License
   MIT
-  ## Contributors
-    s
+  
 
   ### Created by:
   * [v](https://github.com/v)
