@@ -1,7 +1,7 @@
 // Variables needed to run application
 const {writeFile} = require('./utils/writePage.js');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const {generateMarkdown, renderLicenseBadge, renderLicenseLink} = require('./utils/generateMarkdown.js');
 
 // Question array for user input ReadMe
 const reqQuestions = (promptResponse) => {
@@ -202,8 +202,8 @@ const reqQuestions = (promptResponse) => {
 };
 
 // Arrow function to start application
-const init = (data) => {
-    reqQuestions()
+const init = () => {
+    reqQuestions(renderLicenseBadge)
 }
 
 // Start application

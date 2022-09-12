@@ -125,9 +125,7 @@ const generateMarkdown = (data) => {
   ${genInstall(data.installation)}  
   ## Usage
   ${data.usage}
-  <br>
-  ${genContrib(data.credits)}
-  [${data.credits}](${data.creditsLink})<br>
+  [${genContrib(data.credits)}](${data.creditsLink})
   ${genTests(data.tests)}
   ## Questions?
   Questions, comments, or concerns? Please Email me at:
@@ -136,4 +134,4 @@ const generateMarkdown = (data) => {
 }
 
 // Export ReadMe to index.js
-module.exports = generateMarkdown;
+module.exports = {generateMarkdown, renderLicenseBadge, renderLicenseLink};
