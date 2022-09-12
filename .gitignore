@@ -3,5 +3,3 @@ package-lock.json
 package.json
 .vscode
 .DS_Store
-develop
-.gitignore
