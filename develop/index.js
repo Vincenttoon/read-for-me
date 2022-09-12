@@ -9,12 +9,25 @@ const reqQuestions = (promptResponse) => {
         {
             type: 'input',
             name: 'name',
-            message: 'What is your name? (Required)',
+            message: 'What is your full name? (Required)',
             validate: nameInput => {
                 if (nameInput) {
                     return true;
                 } else {
                     console.log('Please insert your name.');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please provide an email so others can contact you. (Required)',
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log('Please insert a valid email!');
                     return false;
                 }
             }
@@ -113,20 +126,20 @@ const reqQuestions = (promptResponse) => {
             type: 'list',
             name: 'license',
             message: 'Please choose a license for this project. (Required)',
-            choices: ['MIT', 'Apache 2.0', 'Creative Commons 1.0', 'GPLv3', 'WTFPL', 'None']
+            choices: ['MIT', 'Apache License 2.0', 'Creative Commons Zero v1.0 Universal', 'GPLv3', 'Mozilla Public License 2.0','The Unlicense', 'None']
         },
         {
             type: 'confirm',
-            name: 'collaborators',
-            message: 'Did you have other collaborators on this project? (Required)',
+            name: 'contributors',
+            message: 'Did you have other contributors on this project? (Required)',
             default: true,
         },
         {
             type: 'input',
             name: 'credits',
             message: 'Please list another collaborator on this project.',
-            when: ({ collaborators }) => {
-                if (collaborators) {
+            when: ({ contributors }) => {
+                if (contributors) {
                     return true;
                 } else {
                     return false;
@@ -137,7 +150,7 @@ const reqQuestions = (promptResponse) => {
         {
             type: 'input',
             name: 'creditsLink',
-            message: 'Please share collaborators Github link',
+            message: 'Please share contributors Github link',
             when: ({ credits }) => {
                 if (credits) {
                     return true;
@@ -149,7 +162,7 @@ const reqQuestions = (promptResponse) => {
         {
             type: 'confirm',
             name: 'creditConfirm',
-            message: 'Would you like to enter another collaborator?',
+            message: 'Would you like to enter another contributor?',
             when: ({ creditsLink }) => {
                 if (creditsLink) {
                     return true;

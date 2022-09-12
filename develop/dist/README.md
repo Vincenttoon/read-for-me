@@ -3,19 +3,20 @@
   ## Description
   v
   ## Table of Contents
-  * [Installation](#installation)
+  
   * [Usage](#usage)
   * [License](#license)
   * [Contributors](#contributors)
 
-  ## Installation
-    v
+  
   ## Usage
   v
   ## License
   MIT
   ## Contributors
-  undefined
+    s
 
   ### Created by:
   * [v](https://github.com/v)
+  #### Have questions, suggestions, or concerns? Please email me at:
+  * v
