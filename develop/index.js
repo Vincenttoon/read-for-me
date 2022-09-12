@@ -4,7 +4,7 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-const reqQuestions = () => {
+const reqQuestions = (promptResponse) => {
     return inquirer.prompt([
         {
             type: 'input',
@@ -73,7 +73,7 @@ const reqQuestions = () => {
         },
         {
             type: 'input',
-            name: 'instructions',
+            name: 'usage',
             message: 'Please provide step-by-step instructions on how to use your application. (Required)',
             validate: instInput => {
                 if (instInput) {
@@ -85,14 +85,26 @@ const reqQuestions = () => {
             }
         },
         {
+            type: 'confirm',
+            name: 'installConfirm',
+            message: 'Does your project require installation instructions?'
+        },
+        {
             name: 'input',
-            name: 'usage',
-            message: 'Provide instructions and examples for use.',
-            validate: usageInput => {
-                if (usageInput) {
+            name: 'installation',
+            message: 'Provide the steps for users on how to install your application.',
+            when: ({ installConfirm }) => {
+                if (installConfirm) {
                     return true;
                 } else {
-                    console.log('Please insert a valid usage description');
+                    return false;
+                }
+            },
+            validate: installInput => {
+                if (installInput) {
+                    return true;
+                } else {
+                    console.log('Please insert a valid installation description');
                     return false;
                 }
             }
@@ -107,7 +119,7 @@ const reqQuestions = () => {
             type: 'confirm',
             name: 'collaborators',
             message: 'Did you have other collaborators on this project? (Required)',
-            default: false,
+            default: true,
         },
         {
             type: 'input',
@@ -144,15 +156,20 @@ const reqQuestions = () => {
                 } else {
                     return false;
                 }
-            }
+            },
         }
     ])
+    .then (data => {
+        return generateMarkdown(data);
+    })
+    .then(Markdown => {
+        return writeFile(Markdown);
+    })
 };
 
 // TODO: Create a function to initialize app
-const init = () => {
+const init = (data) => {
     reqQuestions()
-    .then()
 }
 
 // Function call to initialize app
