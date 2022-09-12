@@ -1,8 +1,10 @@
 // TODO: Include packages needed for this application
+const {writeFile} = require('./utils/writePage.js');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-const questions = () => {
+const reqQuestions = () => {
     return inquirer.prompt([
         {
             type: 'input',
@@ -32,7 +34,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'project',
+            name: 'title',
             message: 'What is the name of your Project? (Required)',
             validate: projectInput => {
                 if (projectInput) {
@@ -149,7 +151,8 @@ const questions = () => {
 
 // TODO: Create a function to initialize app
 const init = () => {
-    questions();
+    reqQuestions()
+    .then()
 }
 
 // Function call to initialize app
