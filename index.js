@@ -126,7 +126,26 @@ const reqQuestions = (promptResponse) => {
             type: 'list',
             name: 'license',
             message: 'Please choose a license for this project. (Required)',
-            choices: ['MIT', 'Apache License 2.0', 'Creative Commons Zero v1.0 Universal', 'GPLv3', 'Mozilla Public License 2.0','The Unlicense', 'None']
+            choices: ['MIT', 'Apache License 2.0', 'ISC',  'BSD 3', 'BSD 2', 'Creative Commons Zero v1.0 Universal', 'GNU GPLv3', 'Eclipse Public License', 'Mozilla Public License 2.0', 'None']
+        },
+        {
+            type: 'confirm',
+            name: 'testConfirm',
+            message: 'Will this application need testing instructions?',
+            default: true
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Please input testing instructions for your application',
+            when: ({ testConfirm }) => {
+                if (testConfirm) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            
         },
         {
             type: 'confirm',
@@ -170,7 +189,7 @@ const reqQuestions = (promptResponse) => {
                     return false;
                 }
             },
-        }
+        },
     ])
     // Takes data and sends it to generateMarkdown
     .then (data => {
