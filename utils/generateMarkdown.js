@@ -102,6 +102,7 @@ const genTests = tests => {
   } else {
     return `
     ## Tests
+    
     ${tests}`
   }
 };
@@ -109,27 +110,39 @@ const genTests = tests => {
 // Arrow function to create ReadMe
 const generateMarkdown = (data) => {
   return `
-  # ${data.title}
-  ## License
-  ### ${data.license}
-  ## Description
-  ${data.description}
-  By: [${data.name}](https://github.com/${data.github})
-  ## Table of Contents
-  ${installCheck(data.installation)}
-  * [Usage](#usage)  
-  ${contribCheck(data.contributors)}
-  ${testCheck(data.tests)}
-  * [Questions?](#questions)<br>
+# ${data.title}
 
-  ${genInstall(data.installation)}  
-  ## Usage
-  ${data.usage}
-  [${genContrib(data.credits)}](${data.creditsLink})
-  ${genTests(data.tests)}
-  ## Questions?
-  Questions, comments, or concerns? Please Email me at:
-  * ${data.email}
+## License
+### ${data.license}
+
+## Description
+${data.description}
+
+By: [${data.name}](https://github.com/${data.github})
+
+## Table of Contents
+${installCheck(data.installation)}
+
+* [Usage](#usage)
+
+${contribCheck(data.contributors)}
+
+${testCheck(data.tests)}
+
+* [Questions?](#questions)<br>
+
+${genInstall(data.installation)}  
+
+## Usage
+${data.usage}
+
+[${genContrib(data.credits)}](${data.creditsLink})
+
+${genTests(data.tests)}
+
+## Questions?
+Questions, comments, or concerns? Please Email me at:
+* ${data.email}
 `;
 }
 
