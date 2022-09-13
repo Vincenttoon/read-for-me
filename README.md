@@ -20,6 +20,8 @@ By: [Vincent Toon](https://github.com/vincenttoon)
 
 * [Contributors](#contributors)
 
+* [Future Improvements](#improvements)
+
 * [Questions?](#questions)
 
 ## Installation
@@ -55,7 +57,7 @@ By: [Vincent Toon](https://github.com/vincenttoon)
 
 * Starter code repository (given to me through WashU Fullstack Bootcamp) [Xandromus](https://github.com/Xandromus)
 
-### Future Improvements
+### Improvements
 
 * Dynamically create photo links as prompts for the user
 * Dynamically create video links for testing section
