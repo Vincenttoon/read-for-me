@@ -126,7 +126,7 @@ const reqQuestions = (promptResponse) => {
             type: 'list',
             name: 'license',
             message: 'Please choose a license for this project. (Required)',
-            choices: ['MIT', 'Apache License 2.0', 'ISC',  'BSD 3', 'BSD 2', 'Creative Commons Zero v1.0 Universal', 'GNU GPLv3', 'Eclipse Public License', 'Mozilla Public License 2.0', 'None']
+            choices: [ 'MIT', 'Apache License 2.0', 'Creative Commons Zero v1.0 Universal', 'BSD 2', 'BSD 3', 'Eclipse Public License', 'GNU GPLv3', 'ISC', 'Mozilla Public License 2.0','None']
         },
         {
             type: 'confirm',
