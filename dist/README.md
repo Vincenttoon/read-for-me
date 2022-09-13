@@ -1,9 +1,9 @@
 
-# READMe Generator
+# ReadMe Generator
 
 ## License
-
-### MIT
+### [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+### [MIT](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -25,7 +25,7 @@ By: [Vincent Toon](https://github.com/vincenttoon)
 
 ## Installation
 
-n/a
+steps for installation
 
 ## Usage
 
@@ -33,11 +33,11 @@ step by step
 
 ## Contributors
 
-* [Stephen Kern](https://github.com/stephen-kern)
+* [Stephen Kern](https://github.com/stephen-kern), [Josh Hawks](https://github.com/jdhawks2132), 
 
 ## Tests
 
-n/a
+testing stuff
 
 ## Questions?
 
