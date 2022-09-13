@@ -2,12 +2,12 @@
 # ReadMe Generator
 
 ## License
-### [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-### [MIT](https://opensource.org/licenses/MIT)
+### [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+### [Creative Commons Zero v1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Description
 
-short description
+Description of the project
 
 By: [Vincent Toon](https://github.com/vincenttoon)
 
@@ -25,11 +25,11 @@ By: [Vincent Toon](https://github.com/vincenttoon)
 
 ## Installation
 
-steps for installation
+install this app!
 
 ## Usage
 
-step by step
+step-by-step instructions
 
 ## Contributors
 
@@ -37,7 +37,7 @@ step by step
 
 ## Tests
 
-testing stuff
+Testing instructions
 
 ## Questions?
 

@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// function to call license badges and links based on license input
 function renderLicenseBadge(license) {
   if (license === 'MIT') {
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
@@ -24,8 +23,7 @@ function renderLicenseBadge(license) {
   }
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// function to render license links based on license input prompts
 function renderLicenseLink(license) {
   if (license === 'MIT') {
     return 'https://opensource.org/licenses/MIT'
@@ -66,12 +64,15 @@ const genContrib = (credit, link) => {
 	if (!credit) {
 		return 'n/a';
 	} else {
+    // splits credit return and link return from user input
 		let creditList = credit.split(',');
 		let linkList = link.split(',');
+    // Sets up empty container, loops through the length of it, attaches the link to it, then forms the necessary Markdown syntax for preferred functionality
 		let creditLink = '';
 		for (let i = 0; i < creditList.length; i++) {
 			creditLink += `[${creditList[i].trim()}](https://github.com/${linkList[i].trim()}), `;
 		}
+    // final return for use
 		return `${creditLink}`;
 	}
 };
@@ -85,7 +86,7 @@ const genTests = (tests) => {
 	}
 };
 
-// Arrow function to create ReadMe
+// Arrow function to create ReadMe Markdown
 const generateMarkdown = (data) => {
 	return `
 # ${data.title}

@@ -190,9 +190,9 @@ const reqQuestions = (promptResponse) => {
 };
 
 // Arrow function to start application
-const init = () => {
+const runApp = () => {
     reqQuestions(renderLicenseBadge)
 }
 
 // Start application
-init();
+runApp();
