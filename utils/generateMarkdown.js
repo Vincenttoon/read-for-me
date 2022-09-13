@@ -52,99 +52,88 @@ const renderLicenseLink = (license) => {
 
 
 // Create checks for non required answers
-// Check and Generate for Installation Prompt
-const installCheck = check => {
-  if (!check) {
-    return ''
-  } else {
-    return `* [Installation](#installation)`
-  }
-};
-const genInstall = installation => {
-  if (!installation) {
-    return ''
-  } else {
-    return `
-    ## Installation
-    ${installation}`
-  }
+// Generate for Installation Prompt
+const genInstall = (installation) => {
+	if (!installation) {
+		return 'n/a';
+	} else {
+		return `${installation}`;
+	}
 };
 
-// Check and Generate for Contributor Prompt
-const contribCheck = check => {
-  if (!check) {
-    return ''
-  } else {
-    return `* [Contributors](#contributors)`
-  }
-}; 
-
-const genContrib = contributors => {
-  if (!contributors) {
-    return ''
-  } else {
-    return `
-    ## Contributors
-    ${contributors}`
-  }
+// Generate for Contributor Prompt
+const genContrib = (credit, link) => {
+	if (!credit) {
+		return 'n/a';
+	} else {
+		let creditList = credit.split(',');
+		let linkList = link.split(',');
+		let creditLink = '';
+		for (let i = 0; i < creditList.length; i++) {
+			creditLink += `* [${creditList[i].trim()}](https://github.com/${linkList[i].trim()})`;
+		}
+		return `${creditLink}`;
+	}
 };
 
-const testCheck = check => {
-  if (!check) {
-    return ''
-  } else {
-    return `* [Tests](#tests)`
-  }
-}; 
-const genTests = tests => {
-  if (!tests) {
-    return ''
-  } else {
-    return `
-    ## Tests
-    
-    ${tests}`
-  }
+// Generate for Tests prompt
+const genTests = (tests) => {
+	if (!tests) {
+		return 'n/a';
+	} else {
+		return `${tests}`;
+	}
 };
 
 // Arrow function to create ReadMe
 const generateMarkdown = (data) => {
-  return `
+	return `
 # ${data.title}
 
 ## License
+
 ### ${data.license}
 
 ## Description
+
 ${data.description}
 
 By: [${data.name}](https://github.com/${data.github})
 
 ## Table of Contents
-${installCheck(data.installation)}
 
-* [Usage](#usage)
+* [Installation](#installation)
 
-${contribCheck(data.contributors)}
+* [Usage](#usage)  
 
-${testCheck(data.tests)}
+* [Contributors](#contributors)
 
-* [Questions?](#questions)<br>
+* [Tests](#tests)
 
-${genInstall(data.installation)}  
+* [Questions?](#questions)
+
+## Installation
+
+${genInstall(data.installation)}
 
 ## Usage
+
 ${data.usage}
 
-[${genContrib(data.credits)}](${data.creditsLink})
+## Contributors
+
+${genContrib(data.credits, data.creditsLink)}
+
+## Tests
 
 ${genTests(data.tests)}
 
 ## Questions?
+
 Questions, comments, or concerns? Please Email me at:
 * ${data.email}
 `;
-}
+};
 
 // Export ReadMe to index.js
 module.exports = {generateMarkdown, renderLicenseBadge, renderLicenseLink};

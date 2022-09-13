@@ -156,7 +156,7 @@ const reqQuestions = (promptResponse) => {
         {
             type: 'input',
             name: 'credits',
-            message: 'Please list another collaborator on this project.',
+            message: 'Please list other collaborators by full names separated by commas.',
             when: ({ contributors }) => {
                 if (contributors) {
                     return true;
@@ -169,7 +169,7 @@ const reqQuestions = (promptResponse) => {
         {
             type: 'input',
             name: 'creditsLink',
-            message: 'Please share contributors Github link',
+            message: 'Please list contributor GitHub names separated by commas (keeping the order the same).',
             when: ({ credits }) => {
                 if (credits) {
                     return true;
@@ -177,18 +177,6 @@ const reqQuestions = (promptResponse) => {
                     return false;
                 }
             }
-        },
-        {
-            type: 'confirm',
-            name: 'creditConfirm',
-            message: 'Would you like to enter another contributor?',
-            when: ({ creditsLink }) => {
-                if (creditsLink) {
-                    return true;
-                } else {
-                    return false;
-                }
-            },
         },
     ])
     // Takes data and sends it to generateMarkdown

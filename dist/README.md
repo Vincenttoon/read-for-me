@@ -1,41 +1,45 @@
 
-# readme generator
+# READMe Generator
 
 ## License
+
 ### MIT
 
 ## Description
-description
 
-By: [Vincent](https://github.com/vincenttoon)
+short description
+
+By: [Vincent Toon](https://github.com/vincenttoon)
 
 ## Table of Contents
+
 * [Installation](#installation)
 
-* [Usage](#usage)
+* [Usage](#usage)  
 
 * [Contributors](#contributors)
 
 * [Tests](#tests)
 
-* [Questions?](#questions)<br>
+* [Questions?](#questions)
 
+## Installation
 
-    ## Installation
-    install  
+n/a
 
 ## Usage
-stepbystep
 
-[
-    ## Contributors
-    stephen](stevelink)
+step by step
 
+## Contributors
 
-    ## Tests
-    
-    testing
+* [Stephen Kern](https://github.com/stephen-kern)
+
+## Tests
+
+n/a
 
 ## Questions?
+
 Questions, comments, or concerns? Please Email me at:
-* vincenttoon22
+* vincenttoon22@gmail.com
