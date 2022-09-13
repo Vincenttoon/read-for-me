@@ -1,15 +1,15 @@
 
-# ReadMe Generator
+# v
 
 ## License
-### [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
-### [Creative Commons Zero v1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
+### [![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
+### [Eclipse Public License](https://opensource.org/licenses/EPL-1.0)
 
 ## Description
 
-Description of the project
+v
 
-By: [Vincent Toon](https://github.com/vincenttoon)
+By: [vince](https://github.com/v)
 
 ## Table of Contents
 
@@ -25,21 +25,23 @@ By: [Vincent Toon](https://github.com/vincenttoon)
 
 ## Installation
 
-install this app!
+Head to the repository to download or view this code: [v](v)
+
+n/a
 
 ## Usage
 
-step-by-step instructions
+v
 
 ## Contributors
 
-* [Stephen Kern](https://github.com/stephen-kern), [Josh Hawks](https://github.com/jdhawks2132), 
+* n/a
 
 ## Tests
 
-Testing instructions
+n/a
 
 ## Questions?
 
 Questions, comments, or concerns? Please Email me at:
-* vincenttoon22@gmail.com
+* v

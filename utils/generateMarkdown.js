@@ -115,6 +115,8 @@ By: [${data.name}](https://github.com/${data.github})
 
 ## Installation
 
+Head to the repository to download or view this code: [${data.title}](${data.gitlink})
+
 ${genInstall(data.installation)}
 
 ## Usage
@@ -138,3 +140,6 @@ Questions, comments, or concerns? Please Email me at:
 
 // Export ReadMe to index.js
 module.exports = {generateMarkdown, renderLicenseBadge, renderLicenseLink};
+
+// link to repo for testing
+// https://github.com/Vincenttoon/read-for-me
