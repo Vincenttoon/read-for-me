@@ -51,7 +51,7 @@ By: [Vincent Toon](https://github.com/vincenttoon)
 
 ## Contributors
 
-* [Xandromus](https://github.com/Xandromus), 
+* Starter code repository (given to me through WashU Fullstack Bootcamp) [Xandromus](https://github.com/Xandromus), 
 
 ## Tests
 
