@@ -1,15 +1,15 @@
 
-# v
+# ReadMe Generator
 
 ## License
-### [![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
-### [Eclipse Public License](https://opensource.org/licenses/EPL-1.0)
+### [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+### [Creative Commons Zero v1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Description
 
-v
+An app that generates a professional ReadMe for the users webpages and applications
 
-By: [vince](https://github.com/v)
+By: [Vincent Toon](https://github.com/vincenttoon)
 
 ## Table of Contents
 
@@ -25,23 +25,23 @@ By: [vince](https://github.com/v)
 
 ## Installation
 
-Head to the repository to download or view this code: [v](v)
+* Head to the repository to download or view this code: [ReadMe Generator](https://github.com/Vincenttoon/read-for-me)
 
-n/a
+Go to the repo linked above, download/copy the code to a local file. Run the code using node index.js and follow the questions attentively
 
 ## Usage
 
-v
+prompt node.js on the index file to start questions. Fulfill all the requirements necessary to explain your project. When finished, a professional ReadMe will be generated, leaving you with only photos to insert (or other personal edits)
 
 ## Contributors
 
-* n/a
+* [Xandromus](https://github.com/Xandromus), 
 
 ## Tests
 
-n/a
+Photos and Video Listed Below
 
 ## Questions?
 
 Questions, comments, or concerns? Please Email me at:
-* v
+* vincenttoon22@gmail.com

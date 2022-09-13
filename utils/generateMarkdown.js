@@ -115,7 +115,7 @@ By: [${data.name}](https://github.com/${data.github})
 
 ## Installation
 
-Head to the repository to download or view this code: [${data.title}](${data.gitlink})
+* Head to the repository to download or view this code: [${data.title}](${data.gitlink})
 
 ${genInstall(data.installation)}
 
