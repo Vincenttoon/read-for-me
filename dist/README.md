@@ -1,4 +1,3 @@
-
 # ReadMe Generator
 
 ## License
@@ -31,7 +30,7 @@ Go to the repo linked above, download/copy the code to a local file. Run the cod
 
 ## Usage
 
-prompt node.js on the index file to start questions. Fulfill all the requirements necessary to explain your project. When finished, a professional ReadMe will be generated, leaving you with only photos to insert (or other personal edits)
+Prompt node.js on the index file to start questions. Fulfill all the requirements necessary to explain your project. When finished, a professional ReadMe will be generated, leaving you with only photos to insert (or other personal edits).
 
 ## Contributors
 

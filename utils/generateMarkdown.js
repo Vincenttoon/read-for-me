@@ -88,8 +88,7 @@ const genTests = (tests) => {
 
 // Arrow function to create ReadMe Markdown
 const generateMarkdown = (data) => {
-	return `
-# ${data.title}
+	return `# ${data.title}
 
 ## License
 ### ${renderLicenseBadge(data.license)}
