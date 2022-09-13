@@ -118,6 +118,10 @@ By: [${data.name}](https://github.com/${data.github})
 
 ${genInstall(data.installation)}
 
+## Tests
+
+${genTests(data.tests)}
+
 ## Usage
 
 ${data.usage}
@@ -125,10 +129,6 @@ ${data.usage}
 ## Contributors
 
 * ${genContrib(data.credits, data.creditsLink)}
-
-## Tests
-
-${genTests(data.tests)}
 
 ## Questions?
 

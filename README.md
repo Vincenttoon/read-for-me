@@ -14,11 +14,11 @@ By: [Vincent Toon](https://github.com/vincenttoon)
 
 * [Installation](#installation)
 
+* [Tests](#tests)
+
 * [Usage](#usage)  
 
 * [Contributors](#contributors)
-
-* [Tests](#tests)
 
 * [Questions?](#questions)
 
@@ -31,9 +31,11 @@ By: [Vincent Toon](https://github.com/vincenttoon)
 3. Run the code using node index.js 
 4. Follow the questions attentively
 
-## Usage
+## Tests
 
 * Video Demonstration: 
+
+## Usage
 
 * Prompt node.js on the index file to start questions. Fulfill all the requirements necessary to explain your project. 
 ![Screenshot of command line](./images/command-line-actions.jpg)
@@ -52,10 +54,6 @@ By: [Vincent Toon](https://github.com/vincenttoon)
 ## Contributors
 
 * Starter code repository (given to me through WashU Fullstack Bootcamp) [Xandromus](https://github.com/Xandromus), 
-
-## Tests
-
-Photos and Video Listed Below
 
 ## Questions?
 
